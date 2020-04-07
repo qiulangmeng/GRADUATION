@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="component::head(~{::title})">
+    <title>Home</title>
+</head>
+
+<body>
+<!-- 置顶框 -->
+<div th:replace="component::header"></div>
+<!--//置顶框-->
+<script>
+    $(document).ready(function() {
+        //获取置顶框高度
+        var navoffeset=$(".agileits_header").offset().top;
+        $(window).scroll(function(){
+            //窗口高度
+            var scrollpos=$(window).scrollTop();
+            if(scrollpos >=navoffeset){
+                //未置顶时，添加类使之置顶
+                $(".agileits_header").addClass("fixed");
+            }else{
+                $(".agileits_header").removeClass("fixed");
+            }
+        });
+
+    });
+</script>
+<!-- logo-->
+<div th:replace="component::logo_products"></div>
+<!--//logo-->
+
+<!-- 横幅 -->
+<div class="banner">
+    <!--左边导航-->
+    <div th:replace="component::banner_nav_left"></div>
+    <!--//左边导航-->
+
+    <!--轮播-->
+    <div class="w3l_banner_nav_right">
+        <section class="slider">
+            <!--flexslider slides用于轮播-->
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <!--w3l_banner_nav_right_banner轮播图1的类标签-->
+                        <div class="w3l_banner_nav_right_banner">
+                            <h3>舌尖<span>中国</span>美味古蔺 </h3>
+                            <div class="more">
+                                <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="去购物">去购物</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--w3l_banner_nav_right_banner轮播图2的类标签-->
+                        <div class="w3l_banner_nav_right_banner1">
+                            <h3>使你的 <span>食物</span> 浓香四溢</h3>
+                            <div class="more">
+                                <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="去购物">去购物</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!--w3l_banner_nav_right_banner轮播图3的类标签-->
+                        <div class="w3l_banner_nav_right_banner2">
+                            <h3>高达 <i>10 %</i> 折扣.</h3>
+                            <div class="more">
+                                <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="去购物">去购物</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- flexSlider -->
+        <link rel="stylesheet" href="/static/css/flexslider.css" type="text/css" media="screen" property="" />
+        <!--轮播插件-->
+        <script defer src="/static/js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+        <!-- 轮播图插件-->
+            $(window).load(function(){
+                $('.flexslider').flexslider({
+                    //自动滑动
+                    animation: "slide",
+                    //滑动速度 默认7000ms
+                    slideshowSpeed: 5000,
+                    //显示左右控制按钮
+                    directionNav: true,
+                    start: function(slider){
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+        </script>
+        <!-- //flexSlider -->
+    </div>
+    <!--//轮播-->
+
+    <!--清除浮动-->
+    <div class="clearfix"></div>
+    <!--//清除浮动-->
+</div>
+<!-- //横幅-->
+
+<!--横幅底部-->
+<div class="banner_bottom">
+    <!--左边间距-->
+    <div class="wthree_banner_bottom_left_grid_sub">
+    </div>
+    <!--//左边间距-->
+
+    <!--图片区域-->
+    <div class="wthree_banner_bottom_left_grid_sub1">
+        <div class="col-md-4 wthree_banner_bottom_left">
+            <div class="wthree_banner_bottom_left_grid">
+                <img src="/static/images/4.jpg" alt=" " class="img-responsive" />
+                <div class="wthree_banner_bottom_left_grid_pos">
+                    <h4>优惠 <span>25%</span></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 wthree_banner_bottom_left">
+            <div class="wthree_banner_bottom_left_grid">
+                <img src="/static/images/5.jpg" alt=" " class="img-responsive" />
+                <div class="wthree_banner_btm_pos">
+                    <h3>引进 <span>最好的</span> for <i>滋补品</i></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 wthree_banner_bottom_left">
+            <div class="wthree_banner_bottom_left_grid">
+                <img src="/static/images/6.jpg" alt=" " class="img-responsive" />
+                <div class="wthree_banner_btm_pos1">
+                    <h3>节省 <span>高达</span> ￥10</h3>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!--//图片区域-->
+
+    <!--清除浮动-->
+    <div class="clearfix"> </div>
+    <!--//清除浮动-->
+</div>
+<!--//横幅底部-->
+
+<!-- 热门优惠 -->
+<div class="top-brands">
+    <!--容器宽度-->
+    <div class="container">
+        <!--标题-->
+        <h3>热门优惠</h3>
+        <!--//标题-->
+
+        <!--设计与标题的距离-->
+        <div class="agile_top_brands_grids">
+            <!--使用商品组件-->
+            <!--col-md-3用于样式适应手机端。根据媒体屏幕宽度调整样式-->
+            <!--向左浮动-->
+            <div th:replace="component::good('tag','/static/images/tag.png','single.html','/static/images/1.png','幸运葵花籽油',55.99 ,70.00,5000,1,'清澈甘甜')"></div>
+            <div th:replace="component::good('agile_top_brand_left_grid_pos','/static/images/offer.png','single.html','/static/images/2.png','百事可乐汽水（2 Ltr）',8.00 ,10.00,2000,2,'畅爽一夏')"></div>
+            <div th:replace="component::good('tag','/static/images/tag.png','single.html','/static/images/3.png','印度香米（5公斤）',11.99 ,15.00,3000,3,'香甜软糯')"></div>
+            <div th:replace="component::good('agile_top_brand_left_grid_pos','/static/images/offer.png','single.html','/static/images/4.png','狗粮（4公斤）',9.00 ,11.00,4000,4,'爱宠首选')"></div>
+            <!--//col-md-3用于样式适应手机端。根据媒体屏幕宽度调整样式-->
+            <!--//向左浮动-->
+            <!--//使用商品组件-->
+            <div class="clearfix"> </div>
+        </div>
+        <!--//设计与标题的距离-->
+    </div>
+    <!--//容器宽度-->
+</div>
+<!-- //热门优惠 -->
+
+<!-- 热门产品 -->
+<div class="fresh-vegetables">
+    <div class="container">
+        <h3>热门产品</h3>
+        <div class="w3l_fresh_vegetables_grids">
+            <div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
+                <div class="w3l_fresh_vegetables_grid2">
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/productsAll">品牌食品</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/vegetablesAll">蔬菜</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/fruitsAll">水果</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/grainsAll">五谷杂粮</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/pickledAll">腌制品</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/marinatingAll">卤制品</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/specialAll">土特产</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/seasoningAll">调味料</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/freshMeatAll">鲜肉</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="/public/get/seafoodAll">水产品</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 w3l_fresh_vegetables_grid_right">
+                <div class="col-md-4 w3l_fresh_vegetables_grid">
+                    <div class="w3l_fresh_vegetables_grid1">
+                        <img src="/static/images/8.jpg" alt=" " class="img-responsive" />
+                    </div>
+                </div>
+                <div class="col-md-4 w3l_fresh_vegetables_grid">
+                    <div class="w3l_fresh_vegetables_grid1">
+                        <div class="w3l_fresh_vegetables_grid1_rel">
+                            <img src="/static/images/7.jpg" alt=" " class="img-responsive" />
+                            <div class="w3l_fresh_vegetables_grid1_rel_pos">
+                                <div class="more m1">
+                                    <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="去购物">去购物</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3l_fresh_vegetables_grid1_bottom">
+                        <img src="/static/images/10.jpg" alt=" " class="img-responsive" />
+                        <div class="w3l_fresh_vegetables_grid1_bottom_pos">
+                            <h5>特供</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 w3l_fresh_vegetables_grid">
+                    <div class="w3l_fresh_vegetables_grid1">
+                        <img src="/static/images/9.jpg" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="w3l_fresh_vegetables_grid1_bottom">
+                        <img src="/static/images/11.jpg" alt=" " class="img-responsive" />
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+                <div class="agileinfo_move_text">
+                    <div class="agileinfo_marquee">
+                        <h4> 首次下单可获得<span class="blink_me">25% 优惠</span> ，还可以获得礼品券</h4>
+                    </div>
+                    <div class="agileinfo_breaking_news">
+                        <span> </span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //热门产品 -->
+
+<!-- 通讯 -->
+<div th:replace="component::newsletter"></div>
+<!-- //通讯  -->
+
+<!-- 页脚 -->
+<div th:replace="component::footer"></div>
+<!--//页脚-->
+
+<!--通用script-->
+<div th:replace="component::common_script"></div>
+<!--//通用script-->
+</body>
+</html>

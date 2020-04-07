@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="component::head(~{::title})">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+    <title>登录&登出</title>
+</head>
+
+<body>
+<!-- 置顶框 -->
+<div th:replace="component::header"></div>
+<!--//置顶框-->
+
+<script>
+    $(document).ready(function() {
+        //获取置顶框高度
+        var navoffeset=$(".agileits_header").offset().top;
+        $(window).scroll(function(){
+            //窗口高度
+            var scrollpos=$(window).scrollTop();
+            if(scrollpos >=navoffeset){
+                //未置顶时，添加类使之置顶
+                $(".agileits_header").addClass("fixed");
+            }else{
+                $(".agileits_header").removeClass("fixed");
+            }
+        });
+
+    });
+</script>
+
+<!-- logo-->
+<div th:replace="component::logo_products"></div>
+<!--//logo-->
+
+<!-- 导航 -->
+<div th:replace="component::guide('登录与注册')"></div>
+<!-- //导航-->
+
+<!-- 横幅 -->
+<div class="banner">
+    <!--左边导航-->
+    <div th:replace="component::banner_nav_left"></div>
+    <!--//左边导航-->
+
+
+    <div class="w3l_banner_nav_right">
+        <!-- 登陆注册 -->
+        <div class="w3_login">
+            <!--     标题     -->
+            <h3>登录 & 注册</h3>
+            <!--     //标题     -->
+            <div class="w3_login_module">
+                <div class="module form-module">
+                    <!--    顶部      -->
+                    <div class="toggle">
+                        <i class="fa fa-times fa-pencil"></i>
+                        <div class="tooltip">点击注册</div>
+                    </div>
+                    <!--    //顶部      -->
+                    <!--    登录      -->
+                    <div class="form">
+                        <h2><span id="acoount_login" onclick=accountLogin()>账户登录</span><span> | </span><span id="fast_login" onclick=fastLogin()>快速登陆</span></h2>
+                        <form th:action="@{/login}" method="post">
+                            <!--/*@thymesVar id="param" type="登录错误返回参数"*/-->
+                            <!--/*@thymesVar id="error" type="参数未error"*/-->
+                            <!--/*@thymesVar id="message" type="最后异常的信息"*/-->
+                            <p style="color:red;text-align: center" th:if="${param?.logout}">已登出</p>
+                            <!--打印spring security最后的异常信息，'.'号之前加'?'是为了进行非空判断-->
+                            <p style="color:red;text-align: center" th:if="${param?.error}" th:text="${session?.SPRING_SECURITY_LAST_EXCEPTION?.message}"></p>
+                            <input type="text" name="username" placeholder="账号" required=" ">
+                            <label id="errorMobile"></label>
+                            <input type="password" name="password" placeholder="密码" required=" ">
+                            <input type="button" class="layui-btn layui-btn-primary" value="获取验证码" id="sendBtn" onclick="sendCode(this)"></input>
+                            <input type="submit" id="login" value="登录">
+                        </form>
+                    </div>
+                    <!--    //登录      -->
+                    <!--    密码输入框       -->
+                    <script>
+                        $(function(){
+                            $('input[placeholder]').placeholder();
+                            $("#password").complexify({}, function(valid, complexity){
+                                if (!valid) {
+                                    $('#complexity').animate({'width':complexity + '%'}).removeClass('valid').addClass('invalid');
+                                } else {
+                                    $('#complexity').animate({'width':complexity + '%'}).removeClass('invalid').addClass('valid');
+                                }
+                                $('#complexity').html(Math.round(complexity) + '%');
+                            });
+                        });
+                    </script>
+                    <!--    //密码输入框       -->
+                    <!--    刷新验证码       -->
+                    <script>
+                        function refresh_kaptcha() {
+                            var path = "/code/kaptcha?p=" + Math.random();
+                            $("#kaptcha").attr("src", path);
+                        }
+                    </script>
+                    <!--    //刷新验证码       -->
+                    <!--    注册      -->
+                    <div class="form">
+                        <h2>创建你的账户</h2>
+                        <form th:action="@{/register}" method="post" id="formId">
+                            <input type="text" name="phone" placeholder="电话号码" required=" " id="InputPhone" onblur="InputPhoneBlur()">
+                            <label id="errorPhone"></label>
+                            <input type="text" name="tryCode" placeholder="验证码" required=" " id="InputCode" onblur="InputCodeBlur()">
+                            <img th:src="@{/code/kaptcha}" id="kaptcha" style="width:100px;height:40px;" class="mr-2"/>
+                            <a href="javascript:refresh_kaptcha();" class="font-size-12 align-bottom">刷新验证码</a>
+                            <label id="errorCode"></label>
+                            <input type="text" name="username" placeholder="用户名" required=" " id="InputUsername" onblur="InputUsernameBlur()">
+                            <label id="errorName"></label>
+                            <div id="complexitywrap"><div id="complexity">0%</div></div>
+                            <input type="password" name="password" placeholder="密码" required=" " id="password" onblur="InputPasswordBlur()">
+                            <label id="errorPassword"></label>
+                            <input type="password" name="password" placeholder="密码" required=" " id="InputRepassword" onblur="InputRepasswordBlur()">
+                            <label id="errorRepassword"></label>
+                            <input type="email" name="email" placeholder="邮箱 地址" required=" " id="InputEmail" onblur="InputEmailBlur()">
+                            <label id="errorEmail"></label>
+                            <input type="button" value="注册" id="submitButton" onclick="checkForm()">
+                        </form>
+                    </div>
+                    <!--    注册      -->
+                    <!-- regist.js -->
+                    <script type="text/javascript" charset="UTF-8" src="/static/js/regist.js"></script>
+                    <!-- //regist.js -->
+                    <!---   密码强度插件      -->
+<!--                    <script src="http://www.jq22.com/jquery/1.7.2/jquery.min.js"></script>-->
+                    <script src="/static/js/jquery.complexify.js"></script>
+                    <script src="/static/js/jquery.placeholder.min.js"></script>
+                    <!---   //密码强度插件      -->
+
+                    <div class="cta"><a href="#">忘记密码?</a></div>
+                </div>
+            </div>
+            <script>
+                $('.toggle').click(function(){
+                    // Switches the Icon
+                    $(this).children('i').toggleClass('fa-pencil');
+                    // Switches the forms
+                    $('.form').animate({
+                        height: "toggle",
+                        'padding-top': 'toggle',
+                        'padding-bottom': 'toggle',
+                        opacity: "toggle"
+                    }, "slow");
+                });
+            </script>
+        </div>
+        <!-- //登陆注册 -->
+    </div>
+
+    <!--    清除浮动    -->
+    <div class="clearfix"></div>
+    <!--    //清除浮动    -->
+</div>
+<!-- //横幅 -->
+
+<!-- 通讯顶部服务 -->
+<div class="newsletter-top-serv-btm">
+    <div class="container">
+        <div class="col-md-4 wthree_news_top_serv_btm_grid">
+            <div class="wthree_news_top_serv_btm_grid_icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+            <h3>购物体验</h3>
+            <p>尽我们最大的努力，保证每一位用户的购物体验的食品安全
+            有机私享家</p>
+    </div>
+        <div class="col-md-4 wthree_news_top_serv_btm_grid">
+            <div class="wthree_news_top_serv_btm_grid_icon">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            </div>
+            <h3>数据安全</h3>
+            <p>尽我们最大的努力，保证每一位用户的购物体验的食品安全
+                有机私享家</p>
+        </div>
+        <div class="col-md-4 wthree_news_top_serv_btm_grid">
+            <div class="wthree_news_top_serv_btm_grid_icon">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+            </div>
+            <h3>快速配送</h3>
+            <p>尽我们最大的努力，保证每一位用户的购物体验的食品安全
+                有机私享家</p>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- //通讯顶部服务 -->
+
+<!-- 通讯 -->
+<div th:replace="component::newsletter"></div>
+<!-- //通讯  -->
+
+<!-- 页脚 -->
+<div th:replace="component::footer"></div>
+<!--//页脚-->
+
+<!--通用script-->
+<div th:replace="component::common_script"></div>
+<!--//通用script-->
+</body>
+</html>

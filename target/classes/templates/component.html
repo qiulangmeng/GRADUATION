@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--    使用方法 :<div th:replace="component::head(~{::title})"></div>  -->
+<!--    ~{::titile}代之当前页面的标题，同理如要扩展，可以加入~{::link}或者~{::script},只需重写component里面的head组件-->
+<head th:fragment="head(title)">
+
+    <!--/*@thymesVar id="title" type="传入的标题"*/-->
+    <title th:replace="${title}">The awesome application</title>
+    <!--//*@thymesVar id="title" type="传入的标题"*/-->
+
+    <!-- 对接手机app -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- //对接手机app -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--spring security中默认csrf是懒加载的，只有在第一次使用_csrf时才会创建session
+而thymeleaf页面的缓冲区满后，response会在模板渲染完毕前被提交，所以response已提交时，若在剩余的模板代码中使用了_csrf并且之前还没创建过session，就会报错
+还是用head的方式保险-->
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <!--// spring security中默认csrf是懒加载的，只有在第一次使用_csrf时才会创建session
+而thymeleaf页面的缓冲区满后，response会在模板渲染完毕前被提交，所以response已提交时，若在剩余的模板代码中使用了_csrf并且之前还没创建过session，就会报错
+还是用head的方式保险-->
+
+    <meta name="author" content="qlm"/>
+    <meta name="keywords" content="" />
+
+    <!--页面加载的时候添加一个定时器，0秒之后执行hideURLbar函数。hideURLbar函数将页面滚动至坐标（0,1）-->
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--//页面加载的时候添加一个定时器，0秒之后执行hideURLbar函数。hideURLbar函数将页面滚动至坐标（0,1）-->
+    <!-- //对接手机app -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- 字体-->
+    <link href="/static/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- 字体-->
+    <!-- js -->
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/js/jquery-2.1.1.js"></script>
+    <!--Font Awesome 图标-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- 滚动置顶组件 -->
+    <script type="text/javascript" src="/static/js/move-top.js"></script>
+    <!--动画组件-->
+    <script type="text/javascript" src="/static/js/easing.js"></script>
+    <!--iconfont图标库-->
+    <link href="/static/iconfont/iconfont.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="/static/iconfont/demo.css">
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                //该方法将通知 Web 浏览器不要执行与事件关联的默认动作
+                event.preventDefault();
+                //屏幕滚动
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!-- 置顶-->
+</head>
+
+<body>
+<div th:fragment="header" th:with="user=${session?.SPRING_SECURITY_CONTEXT?.authentication?.principal}" class="agileits_header fixed">
+    <div class="w3l_offers">
+        <a href="/public/get/productsAll">今日特价！</a>
+    </div>
+    <div class="w3l_search">
+        <form action="#" method="post">
+            <input type="text" name="Product" value="搜索一个商品..." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '搜索一个商品...';}" required>
+            <input type="submit" value=" ">
+        </form>
+    </div>
+    <div class="product_list_header">
+        <div style="cursor: pointer;">
+            <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><i class="badge badge-notify my-cart-badge"></i></span>
+        </div>
+    </div>
+    <div class="w3l_header_right">
+        <ul>
+            <li class="dropdown profile_details_drop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i>
+                    <span class="caret"></span></a>
+                <div class="mega-dropdown-menu" th:if="${user}==null">
+                    <div class="w3ls_vegetables">
+                        <!--无用户时候显示登录和注册-->
+                        <!--/*@thymesVar id="SPRING_SECURITY_CONTEXT" type="spring security 上下文"*/-->
+                        <!--/*@thymesVar id="authentication" type="授权"*/-->
+                        <!--/*@thymesVar id="principal" type="用户证书"*/-->
+                        <!--/*@thymesVar id="username" type="用户名"*/-->
+                        <ul class="dropdown-menu drp-mnu">
+                            <li><a href="/login">用户登录</a></li>
+                            <li><a href="/sms/login">手机登录</a></li>
+                            <li><a href="/login">用户注册</a></li>
+                            <li><a href="/sms/login">快速注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mega-dropdown-menu" th:if="${user}!=null">
+                    <div class="w3ls_vegetables">
+                        <!--无用户时候显示登录和注册-->
+                        <!--/*@thymesVar id="SPRING_SECURITY_CONTEXT" type="spring security 上下文"*/-->
+                        <!--/*@thymesVar id="authentication" type="授权"*/-->
+                        <!--/*@thymesVar id="principal" type="用户证书"*/-->
+                        <!--/*@thymesVar id="username" type="用户名"*/-->
+                        <ul class="dropdown-menu drp-mnu">
+                            <li><a href="#" th:inline="text">用户名:[[${user?.username}]]</a></li>
+                            <li><a th:href="'/user/get/'+${user?.id}+'/center'">账户管理</a></li>
+                            <li><a th:href="'/user/get/'+${user?.id}+'/cart'">进入购物车</a></li>
+                            <li><a href="/logout">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="w3l_header_right1">
+        <h2><a href="/mail">联系我们</a></h2>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!--//置顶框 -->
+
+<div th:fragment="logo_products" class="logo_products">
+    <div class="container">
+        <div class="w3ls_logo_products_left">
+            <h1><a href="home.html"><span>有机</span> 私享家</a></h1>
+        </div>
+        <div class="w3ls_logo_products_left1">
+            <ul class="special_items">
+                <li><a href="events.html">活动</a><i>/</i></li>
+                <li><a href="about.html">有关我们</a><i>/</i></li>
+                <li><a href="products.html">特惠</a><i>/</i></li>
+                <li><a href="services.html">服务</a></li>
+            </ul>
+        </div>
+        <div class="w3ls_logo_products_left1">
+            <ul class="phone_email">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>15928838908</li>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">2573393471@qq.com</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+
+<div th:fragment="banner_nav_left" class="w3l_banner_nav_left">
+    <nav class="navbar nav_bottom">
+        <!-- SpuBrand and toggle get grouped for better mobile display -->
+        <div class="navbar-header nav_2">
+            <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+            <ul class="nav navbar-nav nav_1">
+                <li><a href="/public/get/productsAll">品牌食品</a></li>
+                <li><a href="/public/get/fruitsAll">水果</a></li>
+                <li class="dropdown mega-dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">蔬菜<span class="caret"></span></a>
+                    <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                        <div class="w3ls_vegetables">
+                            <ul>
+                                <li><a href="/public/get/vegetablesAll">畅销蔬菜</a></li>
+                                <li><a href="/public/get/organicVegetablesAll">有机蔬菜</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/public/get/grainsAll">五谷杂粮</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">腌制品&amp;卤制品<span class="caret"></span></a>
+                    <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                        <div class="w3ls_vegetables">
+                            <ul>
+                                <li><a href="/public/get/pickledAll">腌制品</a></li>
+                                <li><a href="/public/get/marinatingAll">卤制品</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>                    <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">特产<span class="caret"></span></a>
+                <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                    <div class="w3ls_vegetables">
+                        <ul>
+                            <li><a href="/public/get/eggAll">禽类，蛋类</a></li>
+                            <li><a href="/public/get/specialAll">土特产</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+                <li><a href="/public/get/seasoningAll">调味料</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">精选黑猪肉<span class="caret"></span></a>
+                    <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+                        <div class="w3ls_vegetables">
+                            <ul>
+                                <li><a href="/public/get/freshMeatAll">鲜肉</a></li>
+                                <li><a href="/public/get/frozenMeatAll">冻肉</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/public/get/seafoodAll">水产品</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</div>
+
+<div th:fragment="newsletter" class="newsletter">
+    <div class="container">
+        <div class="w3agile_newsletter_left">
+            <h3>注册我们的通讯</h3>
+        </div>
+        <div class="w3agile_newsletter_right">
+            <form action="#" method="post">
+                <input type="email" name="Email" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '邮箱';}" required>
+                <input type="submit" value="现在订阅">
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+
+<div th:fragment="footer" class="footer">
+    <div class="container">
+        <div class="col-md-3 w3_footer_grid">
+            <h3>信息</h3>
+            <ul class="w3_footer_grid_list">
+                <li><a href="events.html">大事记</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="products.html">特惠</a></li>
+                <li><a href="services.html">服务</a></li>
+                <li><a href="short-codes.html">简码</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 w3_footer_grid">
+            <h3>政策信息</h3>
+            <ul class="w3_footer_grid_list">
+                <li><a href="faqs.html">常问问题</a></li>
+                <li><a href="privacy.html">隐私政策</a></li>
+                <li><a href="privacy.html">使用条款</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 w3_footer_grid">
+            <h3>店里有什么</h3>
+            <ul class="w3_footer_grid_list">
+                <li><a href="pet.html">宠物食品</a></li>
+                <li><a href="frozen.html">冷冻零食</a></li>
+                <li><a href="kitchen.html">厨房</a></li>
+                <li><a href="products.html">品牌食品</a></li>
+                <li><a href="household.html">住户</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 w3_footer_grid">
+            <h3>网站导航</h3>
+            <ul class="w3_footer_grid_list1">
+                <li><label class="fa fa-chrome" aria-hidden="true"></label><i>登录导航</i><span>登录地址<a href="http://localhost:8080/">http://localhost:8080/</a>
+						首页地址
+						<a href="http://localhost:8080/public/home">http://localhost:8080/public/home</a>后登录</span></li>
+                <li><label class="fa fa-weixin" aria-hidden="true"></label><i>微信导航</i><span>微信福利群 <a href="#">古蔺山区绿色...159928838908</a>
+						私人微博
+						<a href="#">15928838908</a>欢迎联系</span></li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+        <div class="agile_footer_grids">
+            <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+                <div class="w3_footer_grid_bottom">
+                    <h4>100％安全付款</h4>
+                    <!--                    <img src="/static/images/card.png" alt=" " class="img-responsive" />-->
+                    <!--                    <i class="iconfont iconalipay"></i><i class="iconfont iconwechat-"></i><i class="iconfont iconzhifupingtai-yinlian"></i><i class="iconfont iconzhifubao"></i><i class="iconfont iconzhifu-jingdong"></i>-->
+                    <!---agileits_social_icons用于陈列一系列鼠标放置可以变色的图标-->
+                    <ul class="agileits_social_icons">
+                        <li><a href="#" class="blue"><i class="iconfont iconzhifubao1" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="green"><i class="iconfont iconzhifupingtai-weixin" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="red"><i class="iconfont iconzhifupingtai-yinlian" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="gold"><i class="iconfont iconzhifubao" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="brown"><i class="iconfont iconzhifu-jingdong" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+                <div class="w3_footer_grid_bottom">
+                    <h5>联系我们</h5>
+                    <ul class="agileits_social_icons">
+                        <li><a href="#" class="blue"><i class="fa fa-qq" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="green"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="red"><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="purple"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="brown"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!--通用js模组 -->
+<div th:fragment="common_script">
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>
+        <!--菜单下拉鼠标上移变红-->
+        $(document).ready(function(){
+            $(".dropdown").hover(
+                function() {
+                    //下方
+                    $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                    //变红
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    //收起
+                    $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- 这里星星滚动图标 -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+            //回到最顶层 easingType切换不同的回到顶部的方式！！
+            $().UItoTop({ easingType: 'easeOutBounce' });
+
+        });
+    </script>
+    <!-- 购物车模组 -->
+    <script type='text/javascript' src="/static/js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //￥addTocartBtn 是页面 拥有.my-car-button的按钮提交的参数
+            var goToCartIcon = function($addTocartBtn){
+                //获取购物车元素图标
+                var $cartIcon = $(".my-cart-icon");
+                //定义字符串 购物车图片地址从参数中获取
+                var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+                //首先添加图片
+                $addTocartBtn.prepend($image);
+                //购物车元素的位置
+                var position = $cartIcon.position();
+                //参数 （style,speed,easingc,callback）
+                //样式，速度，不同动画点速度，回调
+                $image.animate({
+                    top: position.top,
+                    left: position.left
+                }, 500 , "linear", function() {
+                    $image.remove();
+                });
+            }
+            //构建所有拥有.my-cart-btn的button的加入购物车按钮的规则
+            //{}字典 useroptions
+            //
+            $('.my-cart-btn').myCart({
+                //购物车的类
+                classCartIcon: 'my-cart-icon',
+                //购物车内商品数量的类
+                classCartBadge: 'my-cart-badge',
+                //是否添加上标
+                affixCartIcon: true,
+                //从购物车删除函数，删除时控制台打印
+                checkoutCart: function(products) {
+                    $.each(products, function(){
+                        console.log(this);
+                    });
+                },
+                //点击加入购物车，调用自定义加入购物车函数
+                clickOnAddToCart: function($addTocart){
+                    goToCartIcon($addTocart);
+                },
+                //获得总价函数
+                getDiscountPrice: function(products) {
+                    var total = 0;
+                    $.each(products, function(){
+                        //总价等于每个商品的数量*单价相加
+                        total += this.quantity * this.price;
+                    });
+                    return total * 1;
+                }
+            });
+
+        });
+    </script>
+</div>
+
+<!--商品-->
+<div th:fragment="good(tagClass,tagImage,goodUrl,goodImage,goodName,goodDiscount,goodPrice,goodSales,goodId,goodCaption)" class="col-md-3 top_brand_left">
+    <!--设置宽度和margin-->
+    <div class="hover14 column">
+        <!--设置边框-->
+        <div class="agile_top_brand_left_grid">
+            <!--商品栏的不同点又特供图标的不同-->
+            <!--/*@thymesVar id="tagClass" type="标签类"*/-->
+            <div th:class="${tagClass}">
+                <!--/*@thymesVar id="tagImage" type="标签图片"*/-->
+            <img th:src="${tagImage}" alt=" " class="img-responsive" /></div>
+            <!--//商品栏的不同点又特供图标的不同-->
+
+            <!--商品的具体信息-->
+            <div class="agile_top_brand_left_grid1">
+                <!--图标签-->
+                <figure>
+                    <div class="snipcart-item block" >
+                        <!--商品信息-->
+                        <div class="snipcart-thumb">
+                            <!--链接不同，图片不同，信息不同-->
+                            <!--/*@thymesVar id="goodUrl" type="商品链接地址"*/-->
+                            <a th:href="${goodUrl}">
+                                <!--/*@thymesVar id="goodImage" type="商品图片"*/-->
+                            <img title=" " alt=" " th:src="${goodImage}" /></a>
+                            <!--/*@thymesVar id="goodName" type="商品名"*/-->
+                            <p th:text="${goodName}"></p>
+                            <!--商品折扣价-->
+                            <h4 th:inline="text">￥[[${goodDiscount}]]
+                                <!--/*@thymesVar id="goodPrice" type="商品原价"*/-->
+                            <span th:text="'￥'+ ${goodPrice}"></span>&ensp;
+                            <!--/*@thymesVar id="goodSales" type="销量"*/-->
+                            <i class="iconfont iconcaipinxiaoliang" aria-hidden="true" th:inline="text" style="font-size: 1em;" >[[${goodSales}]]</i>
+                            </h4>
+                        </div>
+                        <!--加入购物车-->
+                        <div class="snipcart-details top_brand_home_details">
+                            <!--data-**的数据不同-->
+                            <!--/*@thymesVar id="goodId" type="商品id"*/-->
+                            <!--/*@thymesVar id="goodName" type="商品名"*/-->
+                            <!--/*@thymesVar id="goodCaption" type="商品副标题"*/-->
+                            <!--/*@thymesVar id="goodDiscount" type="商品折扣价"*/-->
+                            <!--/*@thymesVar id="goodImage" type="商品图片"*/-->
+                            <button class="btn btn-danger my-cart-btn hvr-sweep-to-right" th:data-id="${goodId}" th:data-name="${goodName}" th:data-summary="${goodCaption}" th:data-price="${goodDiscount}" data-quantity="1" th:data-image="${goodImage}">加入购物车t</button>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <!--//商品的具体信息-->
+        </div>
+    </div>
+</div>
+<!--页面导航-->
+<div th:fragment="guide(current)" class="products-breadcrumb">
+    <div class="container">
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="/public/home">首页</a><span>|</span></li>
+            <!--/*@thymesVar id="current" type="当前页面信息"*/-->
+            <li th:text="${current}"></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+<!--    该界面全部用于组件调用不直接呈现在网站上    -->
