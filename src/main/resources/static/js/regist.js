@@ -36,8 +36,8 @@ function checkForm() {
                 alert("状态：" + status
                     + "\n用户：" + date.extraInfo
                     + "\n行为：" + date.title
-                    + "\n结果：" + date.content
-                    + "\n注意：请前往对应邮箱点击账号激活链接！！")
+                    + "\n结果：" + date.content);
+                clear({formId:'registForm'})
             },
             'json')
 
@@ -68,7 +68,7 @@ function InputUsernameBlur() {
     const url = "/checkUsername?username=" + uname.value;
     $.get(url,
         function (date, status) {
-            if (String(date.jugde) === "false") {
+            if (String(date.jugde) === "true") {
                 ename.innerHTML = "用户名已被注册。";
                 return false;
             } else {
@@ -180,7 +180,7 @@ function InputPhoneBlur() {
     const url = "/checkMobile?mobile=" + phone.value;
     $.get(url,
         function (date, status) {
-            if (String(date.jugde) === "false") {
+            if (String(date.jugde) === "true") {
                 ephone.innerHTML = "电话已被注册。";
                 return false;
             } else {
@@ -380,4 +380,9 @@ function InputSmsCodeBlur(a) {
         return true;
     }
 
+}
+function clear({formId:a}) {
+    $("#"+a+" input").each(function () {
+        $(this).val('')
+    })
 }

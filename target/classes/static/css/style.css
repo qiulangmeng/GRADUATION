@@ -2847,6 +2847,18 @@ ul.wmuSliderPagination {
     font-size: 14px;
     font-weight: bold;
 }
+.form-module input[id="resetButton"] {
+    background: #84C639;
+    width: 100%;
+    border: 0;
+    padding: 10px 15px;
+    margin: 30px 0 0;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 .form-module input[type="submit"] {
     background: #84C639;
@@ -2870,6 +2882,13 @@ ul.wmuSliderPagination {
     margin-bottom: -15px;
 }
 .form-module input[id="sendRegistBtn"] {
+     background: #84C639;
+     border: 1px solid #d9d9d9;
+     width: 41%;
+     margin-left: 18px;
+     margin-bottom: -15px;
+ }
+.form-module input[id="sendResetBtn"] {
     background: #84C639;
     border: 1px solid #d9d9d9;
     width: 41%;
@@ -2878,6 +2897,9 @@ ul.wmuSliderPagination {
 }
 
 .form-module input[type="submitButton"]:hover {
+    background: #FA1818;
+}
+.form-module input[type="resetButton"]:hover {
     background: #FA1818;
 }
 
@@ -2889,6 +2911,9 @@ ul.wmuSliderPagination {
      background: #FA1818;
  }
 .form-module input[id="sendRegistBtn"]:hover {
+     background: #FA1818;
+ }
+.form-module input[id="sendResetBtn"]:hover {
     background: #FA1818;
 }
 

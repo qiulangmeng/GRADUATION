@@ -231,6 +231,18 @@ public class User implements UserDetails, Serializable {
             this.mobile=mobile;
             this.password=password;
         }
+        public Builder(User user) {
+            id = user.id;
+            userName = user.userName;
+            sex = user.sex;
+            mobile = user.mobile;
+            password = user.password;
+            email = user.email;
+            userImageUrl = user.userImageUrl;
+            accountNonLocked=user.accountNonLocked;
+            createTime = user.createTime;
+            updateTime = new Date();
+        }
 
         /**
          * Sets the {@code roles} and returns a reference to this Builder so that the methods can be chained together.

@@ -66,4 +66,7 @@ public class Message {
     public static Message registMessage(String content, HttpServletRequest request){
         return new Message("注册",content,request.getParameter("mobile"));
     }
+    public static Message resetMessage(String content,HttpServletRequest request){
+        return new Message("重置",content,request.getParameter("mobile"));
+    }
 }

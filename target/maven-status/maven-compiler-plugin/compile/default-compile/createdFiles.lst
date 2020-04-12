@@ -14,6 +14,7 @@ qlm\web\graduationproject\entity\good\Spu.class
 qlm\web\graduationproject\controller\PublicController.class
 qlm\web\graduationproject\entity\manager\UserAttempts.class
 qlm\web\graduationproject\repository\address\AddressRepository.class
+qlm\web\graduationproject\entity\manager\User$Builder.class
 qlm\web\graduationproject\repository\HotWordRepository.class
 qlm\web\graduationproject\controller\AdminController.class
 qlm\web\graduationproject\entity\good\skuPromotion.class
@@ -28,6 +29,7 @@ qlm\web\graduationproject\service\manager\impl\RoleServiceImpl.class
 qlm\web\graduationproject\controller\CodeController.class
 qlm\web\graduationproject\utils\SendMailUtil.class
 qlm\web\graduationproject\service\manager\UserAttemptsService.class
+qlm\web\graduationproject\utils\RequestToUserUtil.class
 qlm\web\graduationproject\repository\car\CarRepository.class
 qlm\web\graduationproject\provider\sms\myAuthenticationFailureHandler.class
 qlm\web\graduationproject\entity\manager\User.class
@@ -39,6 +41,7 @@ qlm\web\graduationproject\service\email\MailServiceImpl.class
 qlm\web\graduationproject\entity\good\Sku.class
 qlm\web\graduationproject\utils\SkuChangeUtils.class
 qlm\web\graduationproject\service\email\MailService.class
+qlm\web\graduationproject\utils\RedisUtil.class
 qlm\web\graduationproject\controller\SuperAdminController.class
 qlm\web\graduationproject\config\WebMvcConfig.class
 qlm\web\graduationproject\provider\sms\SmsCodeAuthenticationToken.class
@@ -61,6 +64,7 @@ qlm\web\graduationproject\repository\good\SkuSpecificationsRepository.class
 qlm\web\graduationproject\repository\good\SpuBrandRepository.class
 qlm\web\graduationproject\entity\HotWord.class
 qlm\web\graduationproject\service\good\impl\SkuServiceImpl.class
+qlm\web\graduationproject\entity\manager\User$1.class
 qlm\web\graduationproject\io\Message.class
 qlm\web\graduationproject\entity\good\SkuImage.class
 qlm\web\graduationproject\entity\manager\UserSearch.class
@@ -70,6 +74,7 @@ qlm\web\graduationproject\service\manager\impl\UserServiceImpl.class
 qlm\web\graduationproject\entity\order\OrderItem.class
 qlm\web\graduationproject\repository\good\SkuImageRepository.class
 qlm\web\graduationproject\service\es\SkuEsService.class
+qlm\web\graduationproject\config\RedisConfig.class
 qlm\web\graduationproject\entity\good\SpuBrand.class
 qlm\web\graduationproject\GraduationProjectApplication.class
 qlm\web\graduationproject\repository\manager\RoleRepository.class

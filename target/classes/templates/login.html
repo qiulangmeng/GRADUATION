@@ -96,7 +96,7 @@
                     <!--    注册      -->
                     <div class="form">
                         <h2>创建你的账户</h2>
-                        <form th:action="@{/register}" method="post" id="formId">
+                        <form th:action="@{/register}" method="post" id="registForm">
                             <input type="text" name="phone" placeholder="电话号码" required=" " id="InputPhone"
                                    onblur="InputPhoneBlur()">
                             <label id="errorPhone"></label>
@@ -141,7 +141,7 @@
                     <script src="/static/js/jquery.placeholder.min.js"></script>
                     <!---   //密码强度插件      -->
 
-                    <div class="cta"><a href="#">忘记密码?</a></div>
+                    <div class="cta"><a th:href="@{/reset}">忘记密码?</a></div>
                     <div class="toggle1">
                         <i class="fa fa-times fa-pencil"></i>
                         <div class="tooltip1">可选设置</div>
