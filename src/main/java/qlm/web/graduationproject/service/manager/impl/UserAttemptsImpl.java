@@ -69,7 +69,11 @@ public class UserAttemptsImpl implements UserAttemptsService {
      */
     @Override
     public void resetFailAttempts(String userName) {
-        UserAttempts userAttempts = Objects.requireNonNull(userAttemptsRepository.findByUserName(userName), "用户登录记录不存在");
+        UserAttempts userAttempts = userAttemptsRepository.findByUserName(userName);
+        if(userAttempts==null){
+            updateFailAttempts(userName);
+            return;
+        }
         userAttemptsRepository.save(new UserAttempts(userAttempts.getId(),userName,0,null));
     }
 

@@ -45,8 +45,32 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         if(user==null){
             throw new BadCredentialsException("用户不存在!");
         }
-        if(!user.getIsActive()){
-            throw new BadCredentialsException("用户未激活!激活地址："+user.getEmail());
+        if(!user.getAccountNonLocked()){
+            //锁定时间5分钟
+            long overTime = userAttemptsService.overTime(user.getUserAttempts());
+            if(overTime>=5){
+                userAttemptsService.resetFailAttempts(user.getUsername());
+            }
+            else {
+                throw new LockedException("用户账号已被锁定，"+(5-overTime)+"分钟后重试");
+            }
+        }else {
+            //有失败记录但是未锁定的用户每分钟回复一次登录机会
+            if(user.getUserAttempts()!=null&&user.getUserAttempts().getLastModified()!=null){
+                UserAttempts userAttempts = user.getUserAttempts();
+                long overTime = userAttemptsService.overTime(userAttempts);
+                long addTimes = overTime>userAttempts.getAttempts()?0:userAttempts.getAttempts()-overTime;
+                userAttemptsRepository.save(new UserAttempts(userAttempts.getId(),userAttempts.getUserName(),(int)addTimes,new Date()));
+            }
+        }
+
+        return user;
+    }
+    @Override
+    public UserDetails loadUserByMobile(String mobile) {
+        User user = userRepository.findByMobile(mobile);
+        if(user==null){
+            throw new BadCredentialsException("用户不存在!");
         }
         if(!user.getAccountNonLocked()){
             //锁定时间5分钟
@@ -59,7 +83,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             }
         }else {
             //有失败记录但是未锁定的用户每分钟回复一次登录机会
-            if(user.getUserAttempts().getLastModified()!=null){
+            if(user.getUserAttempts()!=null&&user.getUserAttempts().getLastModified()!=null){
                 UserAttempts userAttempts = user.getUserAttempts();
                 long overTime = userAttemptsService.overTime(userAttempts);
                 long addTimes = overTime>userAttempts.getAttempts()?0:userAttempts.getAttempts()-overTime;
@@ -101,6 +125,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     @Transactional(rollbackOn = Exception.class)
     public User saveOrUpdateUser(@Valid User user) {
+
         try {
             userRepository.save(user);
         }catch (Exception e){
@@ -122,4 +147,5 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             throw new RuntimeException("Delete User Error"+ e.getMessage());
         }
     }
+
 }

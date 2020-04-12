@@ -1,6 +1,7 @@
 package qlm.web.graduationproject.entity.car;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
@@ -22,6 +23,7 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
+@EqualsAndHashCode
 public class Car implements Serializable {
     /**
      * 物理结构用户关系

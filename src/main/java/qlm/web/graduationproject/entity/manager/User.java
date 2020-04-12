@@ -4,6 +4,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.ColumnTransformer;
+import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -83,32 +85,24 @@ public class User implements UserDetails, Serializable {
     private Long id;
 
     @NotBlank(message = "用户名不能为空")
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true)
     private String userName;
 
     private String sex;
 
     @NotBlank(message = "电话不能为空")
-    @Column(nullable = false)
-    private String phone;
+    @Column(nullable = false,unique = true)
+    private String mobile;
 
     @NotBlank(message = "密码不能为空")
     @Column(nullable = false)
+    @ColumnTransformer()
     private String password;
 
-    @NotBlank(message = "邮箱不能为空")
-    @Column(nullable = false)
     private String email;
+
     @ColumnDefault("'/static/images/userDefault.png'")
     private String userImageUrl;
-
-    @NotNull(message = "激活状态不能为空")
-    @Column(nullable = false,columnDefinition = "tinyint comment '是否激活'")
-    private Boolean isActive;
-
-    @NotBlank(message = "激活码不能为空")
-    @Column(nullable = false )
-    private String activeCode;
 
     @NotNull(message = "是否锁定不能为空")
     @Column(nullable = false,columnDefinition = "tinyint default 1 comment '是否上架'")
@@ -122,7 +116,29 @@ public class User implements UserDetails, Serializable {
     @LastModifiedDate
     @Column(nullable = false)
     private Date updateTime;
-    private Long defaultAddressId;
+
+    private User(Builder builder) {
+        roles = builder.roles;
+        addresses = builder.addresses;
+        cars = builder.cars;
+        orders = builder.orders;
+        userSearches = builder.userSearches;
+        setUserAttempts(builder.userAttempts);
+        id = builder.id;
+        userName = builder.userName;
+        sex = builder.sex;
+        mobile = builder.mobile;
+        password = builder.password;
+        email = builder.email;
+        userImageUrl = builder.userImageUrl;
+        setAccountNonLocked(builder.accountNonLocked);
+        createTime = builder.createTime;
+        updateTime = builder.updateTime;
+    }
+
+    public User() {
+    }
+
     /**
      * 重写方法
      * @return 权限集合
@@ -184,6 +200,231 @@ public class User implements UserDetails, Serializable {
     public boolean isEnabled() {
         return true;
     }
+
+    /**
+     * {@code User} builder static inner class.
+     */
+    public static final class Builder {
+        private Set<Role> roles;
+        private Set<Address> addresses;
+        private Set<Car> cars;
+        private Set<Orders> orders;
+        private Set<UserSearch> userSearches;
+        private UserAttempts userAttempts;
+        private Long id;
+        private @NotBlank(message = "用户名不能为空") @UniqueElements String userName;
+        private String sex="";
+        private @NotBlank(message = "电话不能为空") @UniqueElements String mobile;
+        private @NotBlank(message = "密码不能为空") String password;
+        private String email="";
+        private String userImageUrl="/static/images/userDefault.png";
+        private @NotNull(message = "是否锁定不能为空") Boolean accountNonLocked=true;
+        private Date createTime=new Date();
+        private Date updateTime=new Date();
+
+        public Builder() {
+        }
+        public Builder(@NotBlank(message = "用户名不能为空") @UniqueElements String userName,
+                       @NotBlank(message = "电话不能为空") @UniqueElements String mobile,
+                       @NotBlank(message = "密码不能为空") String password){
+            this.userName=userName;
+            this.mobile=mobile;
+            this.password=password;
+        }
+
+        /**
+         * Sets the {@code roles} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code roles} to set
+         * @return a reference to this Builder
+         */
+        public Builder roles(Set<Role> val) {
+            roles = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code addresses} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code addresses} to set
+         * @return a reference to this Builder
+         */
+        public Builder addresses(Set<Address> val) {
+            addresses = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code cars} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code cars} to set
+         * @return a reference to this Builder
+         */
+        public Builder cars(Set<Car> val) {
+            cars = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code orders} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code orders} to set
+         * @return a reference to this Builder
+         */
+        public Builder orders(Set<Orders> val) {
+            orders = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code userSearches} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code userSearches} to set
+         * @return a reference to this Builder
+         */
+        public Builder userSearches(Set<UserSearch> val) {
+            userSearches = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code userAttempts} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code userAttempts} to set
+         * @return a reference to this Builder
+         */
+        public Builder userAttempts(UserAttempts val) {
+            userAttempts = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code id} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code id} to set
+         * @return a reference to this Builder
+         */
+        public Builder id(Long val) {
+            id = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code userName} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code userName} to set
+         * @return a reference to this Builder
+         */
+        public Builder userName(@NotBlank(message = "用户名不能为空") @UniqueElements String val) {
+            userName = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code sex} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code sex} to set
+         * @return a reference to this Builder
+         */
+        public Builder sex(String val) {
+            sex = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code mobile} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code mobile} to set
+         * @return a reference to this Builder
+         */
+        public Builder mobile(@NotBlank(message = "电话不能为空") @UniqueElements String val) {
+            mobile = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code password} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code password} to set
+         * @return a reference to this Builder
+         */
+        public Builder password(@NotBlank(message = "密码不能为空") String val) {
+            password = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code email} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code email} to set
+         * @return a reference to this Builder
+         */
+        public Builder email(String val) {
+            email = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code userImageUrl} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code userImageUrl} to set
+         * @return a reference to this Builder
+         */
+        public Builder userImageUrl(String val) {
+            userImageUrl = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code accountNonLocked} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code accountNonLocked} to set
+         * @return a reference to this Builder
+         */
+        public Builder accountNonLocked(@NotNull(message = "是否锁定不能为空") Boolean val) {
+            accountNonLocked = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code createTime} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code createTime} to set
+         * @return a reference to this Builder
+         */
+        public Builder createTime(Date val) {
+            createTime = val;
+            return this;
+        }
+
+        /**
+         * Sets the {@code updateTime} and returns a reference to this Builder so that the methods can be chained together.
+         *
+         * @param val the {@code updateTime} to set
+         * @return a reference to this Builder
+         */
+        public Builder updateTime(Date val) {
+            updateTime = val;
+            return this;
+        }
+
+        /**
+         * Returns a {@code User} built from the parameters previously set.
+         *
+         * @return a {@code User} built with parameters of this {@code User.Builder}
+         */
+        public User build() {
+            return new User(this);
+        }
+    }
+
+    /**
+     * {@code User} builder static inner class.
+     */
+
+
+//构建器
+
 
 
 }

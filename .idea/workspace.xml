@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73a885c5-feba-4bd4-8ab4-29719cee8106" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationproject.log" beforeDir="false" afterPath="$PROJECT_DIR$/graduationproject.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/GraduationProjectApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/config/KaptchaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/CodeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/PublicController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/SuperAdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/HotWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/address/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/car/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/es/SkuEs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/Options.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/Sku.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SkuImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SkuSpecifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/Spu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SpuBrand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SpuCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SpuSpecification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/skuPromotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/Authority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/UserAttempts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/UserSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/order/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/order/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/io/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/provider/LoginAuthenticationProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/HotWordRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/address/AddressRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/car/CarRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/es/SkuEsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/OptionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/SkuImageRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/SkuReposity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/SkuSpecificationsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/SpuBrandRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/SpuCategoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/SpuRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/good/SpuSpecificationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/manager/AuthorityRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/manager/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/manager/UserAttemptsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/manager/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/manager/UserSearchRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/order/OrderItemRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/repository/order/OrdersRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/es/SkuEsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/es/impl/SkuEsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/good/SkuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/good/impl/SkuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/manager/RoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/manager/UserAttemptsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/manager/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/manager/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/manager/impl/UserAttemptsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/manager/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/sms/SmsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/sms/SmsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/utils/SendMailUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/utils/SendMailUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/utils/SkuChangeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/qlm/web/graduationproject/GraduationProjectApplicationTests.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="graduation_project" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#input#5;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#5;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#6;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#6;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#7;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#7;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/regist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6099">
+              <caret line="321" column="11" selection-start-line="321" selection-start-column="11" selection-end-line="321" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AbstractAuthenticationProcessingFilter</find>
+      <find>AntPathRequestMatcher</find>
+      <find>toggle</find>
+      <find>fa</find>
+      <find>tooltip</find>
+      <find>allmap</find>
+      <find>r-result</find>
+      <find>container</find>
+      <find>cityName</find>
+      <find>@</find>
+      <find>my</find>
+      <find>collapse</find>
+      <find>bs.collapse</find>
+      <find>hide</find>
+      <find>show()</find>
+      <find>hide()</find>
+      <find>required=&quot; &quot;</find>
+      <find>loa</find>
+      <find>load</find>
+      <find>logger</find>
+      <find>set</find>
+      <find>sendBtn</find>
+      <find>getCode</find>
+      <find>time</find>
+      <find>wait</find>
+      <find>session</find>
+      <find>getAttribute</find>
+      <find>active</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>baidu</replace>
+      <replace>show</replace>
+      <replace>css(&quot;display&quot;,&quot;block&quot;)</replace>
+      <replace>css(&quot;display&quot;,&quot;none&quot;)</replace>
+      <replace>LOG</replace>
+      <replace>a</replace>
+      <replace>b</replace>
+      <replace>request</replace>
+      <replace>getParameter</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="b4e69311-1567-4284-848a-2173e6447368" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/Provider/sms/SmsCodeAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/LoginAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/component.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.11.1.min.js" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/target/classes/templates/text.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/test.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/baidu.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/dist.bootstrap.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/text.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/baidu.css" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/myAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/myAuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/repository/manager/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/SmsCodeAuthenticationSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/service/email/MailServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/RedisAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/RedisUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/InitializingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/regist.js" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/ValidateCodeFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/io/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RequestToUserUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserAttemptsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="C:\Users\86152\.m2\my-setting\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="graduation_project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="graduation_project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="graduation_project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1014" />
+    <option name="y" value="9" />
+    <option name="width" value="963" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="address" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="sms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="qlm.web.graduationproject.utils" />
+      <recent name="qlm.web.graduationproject.service.email" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\graduation\project\src\main\resources\static\images" />
+      <recent name="D:\graduation\project\src\main\resources\static\js" />
+      <recent name="D:\graduation\project\src\main\resources\static\css" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 9 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 9 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="graduation_project" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GraduationProjectApplication">
+    <configuration name="MailServiceImplTest.sayHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="qlm.web.graduationproject.service.email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="qlm.web.graduationproject.service.email" />
+      <option name="MAIN_CLASS_NAME" value="qlm.web.graduationproject.service.email.MailServiceImplTest" />
+      <option name="METHOD_NAME" value="sayHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MailServiceImplTest.sendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="qlm.web.graduationproject.service.email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="qlm.web.graduationproject.service.email" />
+      <option name="MAIN_CLASS_NAME" value="qlm.web.graduationproject.service.email.MailServiceImplTest" />
+      <option name="METHOD_NAME" value="sendMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisUtilTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="qlm.web.graduationproject.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="qlm.web.graduationproject.utils" />
+      <option name="MAIN_CLASS_NAME" value="qlm.web.graduationproject.utils.RedisUtilTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendMessageUtil.testSendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="qlm.web.graduationproject.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="qlm.web.graduationproject.utils" />
+      <option name="MAIN_CLASS_NAME" value="qlm.web.graduationproject.utils.SendMessageUtil" />
+      <option name="METHOD_NAME" value="testSendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmsServiceImpl.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="graduation_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="qlm.web.graduationproject.service.sms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="qlm.web.graduationproject.service.sms" />
+      <option name="MAIN_CLASS_NAME" value="qlm.web.graduationproject.service.sms.SmsServiceImpl" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraduationProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="qlm.web.graduationproject.GraduationProjectApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.SendMessageUtil.testSendMessage" />
+      <item itemvalue="JUnit.SmsServiceImpl.Test" />
+      <item itemvalue="JUnit.MailServiceImplTest.sendMail" />
+      <item itemvalue="JUnit.MailServiceImplTest.sayHello" />
+      <item itemvalue="JUnit.RedisUtilTest.test" />
+      <item itemvalue="Spring Boot.GraduationProjectApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RedisUtilTest.test" />
+        <item itemvalue="JUnit.MailServiceImplTest.sendMail" />
+        <item itemvalue="JUnit.MailServiceImplTest.sayHello" />
+        <item itemvalue="JUnit.SmsServiceImpl.Test" />
+        <item itemvalue="JUnit.SendMessageUtil.testSendMessage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73a885c5-feba-4bd4-8ab4-29719cee8106" name="Default Changelist" comment="" />
+      <created>1586061225299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586061225299</updated>
+      <workItem from="1586061229337" duration="42359000" />
+      <workItem from="1586173321751" duration="12750000" />
+      <workItem from="1586230777866" duration="26937000" />
+      <workItem from="1586311390755" duration="58448000" />
+      <workItem from="1586522862015" duration="34249000" />
+      <workItem from="1586676175757" duration="2433000" />
+    </task>
+    <task id="LOCAL-00001" summary="首次提交">
+      <created>1586232374056</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586232374056</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MailServiceImplTest_sendMail - 2020.04.09 at 11h 30m 19s.xml">
+      <configuration name="MailServiceImplTest.sendMail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MailServiceImplTest_sendMail - 2020.04.09 at 11h 53m 46s.xml">
+      <configuration name="MailServiceImplTest.sendMail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 05m 58s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 10m 31s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 13m 25s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 14m 51s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 20m 05s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 11h 21m 39s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 11h 29m 14s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test - 2020.04.10 at 15h 23m 51s.xml">
+      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="177176000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Structure" order="3" sideWeight="0.50177306" side_tool="true" weight="0.3702506" />
+      <window_info id="Favorites" order="4" sideWeight="0.50177306" side_tool="true" weight="0.3694422" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49822694" visible="true" weight="0.31932095" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37411347" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5177305" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="MyBatis Log" order="12" />
+      <window_info anchor="bottom" id="Problems" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.60923624" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.37411347" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="1" weight="0.32983023" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="RestServices" order="4" weight="0.32983023" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Key Promoter X" order="7" weight="0.32983023" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Structure" order="3" sideWeight="0.50177306" side_tool="true" weight="0.3702506" />
+      <window_info id="Favorites" order="4" sideWeight="0.50177306" side_tool="true" weight="0.3694422" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49822694" visible="true" weight="0.36540017" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.67021275" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4831261" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="MyBatis Log" order="12" />
+      <window_info anchor="bottom" id="Problems" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.60923624" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.6749556" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="1" weight="0.32983023" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="RestServices" order="4" weight="0.32983023" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Key Promoter X" order="7" weight="0.32983023" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/graduation" />
+    </ignored-roots>
+    <MESSAGE value="首次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="首次提交" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationProvider.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>Map&lt;String,Object&gt; a=(Map&lt;String, Object&gt;) request.getSession().getAttribute(&quot;smsCode&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.lang.String,java.lang.Object</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getSession().getAttribute(&quot;smsCode&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/GraduationProjectApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/UserAttemptsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/SmsCodeAuthenticationSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.5.RELEASE/spring-data-redis-2.2.5.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.5.RELEASE/spring-data-redis-2.2.5.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/SendMailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/SkuChangeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.5.RELEASE/spring-data-redis-2.2.5.RELEASE.jar!/org/springframework/data/redis/connection/RedisStandaloneConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/RedisAutoConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.5.RELEASE/spring-data-redis-2.2.5.RELEASE.jar!/org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/service/email/MailServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Options.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/RedisUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1648#1649#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/InitializingController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1580#1602#1" expanded="true" />
+            <element signature="e#1640#1662#1" expanded="true" />
+            <element signature="e#1697#1723#1" expanded="true" />
+            <element signature="e#1762#1799#1" expanded="true" />
+            <element signature="e#1837#1874#1" expanded="true" />
+            <element signature="e#1919#1958#1" expanded="true" />
+            <element signature="e#3264#3307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Sku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="103" column="72" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="2873" selection-start-line="2873" selection-end-line="2873" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/FilterChainProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/ValidateCodeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/io/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+          <folding>
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4826">
+          <caret line="271" column="5" selection-start-line="271" selection-start-column="5" selection-end-line="271" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.4.RELEASE/spring-aop-5.2.4.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="456" selection-start-line="456" selection-end-line="456" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1099">
+          <caret line="66" column="84" selection-start-line="66" selection-start-column="84" selection-end-line="66" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserAttemptsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RequestToUserUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/LoginAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+          <folding>
+            <element signature="e#12274#12275#0" expanded="true" />
+            <element signature="e#12319#12320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-2.1.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="6791" selection-start-line="6791" selection-end-line="6791" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#input#5;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#6;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#6;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#7;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#7;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/regist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6099">
+          <caret line="321" column="11" selection-start-line="321" selection-start-column="11" selection-end-line="321" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

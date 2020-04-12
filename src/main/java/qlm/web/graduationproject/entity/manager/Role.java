@@ -1,6 +1,7 @@
 package qlm.web.graduationproject.entity.manager;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
@@ -20,6 +21,7 @@ import java.util.Set;
 @Setter
 @Entity
 @Table(name = "role")
+@EqualsAndHashCode
 public class Role implements GrantedAuthority , Serializable {
     /**
      * 物理结构

@@ -10,10 +10,13 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.firewall.HttpFirewall;
 import org.springframework.security.web.firewall.StrictHttpFirewall;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import qlm.web.graduationproject.provider.LoginAuthenticationProvider;
+import qlm.web.graduationproject.provider.sms.SmsCodeAuthenticationProvider;
+import qlm.web.graduationproject.provider.sms.ValidateCodeFilter;
 
 /**
  * @author qlm
@@ -31,6 +34,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private LoginAuthenticationProvider loginAuthenticationProvider;
+    @Autowired
+    private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
+    @Autowired
+    private ValidateCodeFilter validateCodeFilter;
+    @Autowired
+    SmsCodeAuthenticationProvider smsCodeAuthenticationProvider;
 
     /**
      * 配置地址栏不能识别 // 的情况
@@ -52,7 +61,26 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable().authorizeRequests()
+                .apply(smsCodeAuthenticationSecurityConfig)
+
+                // 设置验证码过滤器到过滤器链中，在UsernamePasswordAuthenticationFilter之前执行
+                .and().addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
+
+                //自定义表单登录界面
+                .formLogin().loginPage("/login")
+
+                // 设置登录验证请求地址为自定义登录页配置action （"/account/login"）
+                .loginProcessingUrl("/account/login")
+
+                //设置登录页，成功后访问的页面和访问错误页，dispath将根据角色分配不同页面
+                .defaultSuccessUrl("/dispath")
+
+                //失败界面
+                .failureUrl("/login?error=true")
+
+                //授权请求设置
+                .and().authorizeRequests()
+
                 //访问/superadmin控制台需要superadmin角色
                 .antMatchers("/superadmin/**").hasRole("SUPERADMIN")
 
@@ -65,31 +93,34 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //静态资源，登录资源，公共资源，控制台资源所有请求都可以访问
                 .antMatchers("/static/**", "login.html", "/public/**","/code/**", "/h2-console/**").permitAll()
 
-                .and()
-                //基于表单form的访问方式
-                .formLogin()
+                //remember-me设置
+                .and().rememberMe().key(KEY)
 
-                //设置登录页，成功后访问的页面和访问错误页，dispath将根据角色分配不同页面
-                .loginPage("/login")
-                .defaultSuccessUrl("/dispath")
-                .failureUrl("/login?error=true")
-                .and()
-                .logout()
-                .logoutUrl("/logout")
+                // 【记住我功能】有效期为两周
+                .tokenValiditySeconds(3600 * 24 * 14)
+
+                //跨域访问安全禁止
+                .and().csrf().disable()
+
+                //自定义登出请求
+                .logout().logoutUrl("/logout")
+
+                //成功
                 .logoutSuccessUrl("/login?logout=true")
+
+                //请求
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
+
+                //删除缓存
                 .deleteCookies("JSESSIONID")
+
+                //删除session
                 .invalidateHttpSession(true)
 
-                //remember-me设置
-                .and()
-                .rememberMe()
-                .key(KEY)
 
                 //账号密码错误进入403界面
-                .and()
-                .exceptionHandling()
-                .accessDeniedPage("/400");
+                .and().exceptionHandling().accessDeniedPage("/403");
+
         //禁用h2控制台的csrf防护
         http.csrf().ignoringAntMatchers("/h2-console/**");
         //允许来自同一来源的h2控制台的请求
@@ -105,6 +136,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         //配置权限管理提供者
         auth.authenticationProvider(loginAuthenticationProvider);
+        auth.authenticationProvider(smsCodeAuthenticationProvider);
     }
 
 }

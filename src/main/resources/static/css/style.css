@@ -2695,9 +2695,24 @@ ul.wmuSliderPagination {
 }
 
 .form-module .toggle {
+     cursor: pointer;
+     position: absolute;
+     top: -0;
+     right: -0;
+     background: #FA1818;
+     width: 30px;
+     height: 30px;
+     margin: -5px 0 0;
+     color: #ffffff;
+     font-size: 12px;
+     line-height: 30px;
+     text-align: center;
+ }
+.form-module .toggle1 {
+    display: none;
     cursor: pointer;
     position: absolute;
-    top: -0;
+    top: 445px;
     right: -0;
     background: #FA1818;
     width: 30px;
@@ -2723,8 +2738,32 @@ ul.wmuSliderPagination {
     opacity: 1;
     font-family: 'Ubuntu', sans-serif !important;
 }
+.form-module .toggle1 .tooltip1 {
+    position: absolute;
+    top: 5px;
+    right: -75px;
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    width: auto;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    opacity: 1;
+    font-family: 'Ubuntu', sans-serif !important;
+}
 
 .form-module .toggle .tooltip:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    display: block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid rgba(0, 0, 0, 0.6);
+}
+.form-module .toggle1 .tooltip1:before {
     content: '';
     position: absolute;
     top: 5px;
@@ -2772,7 +2811,7 @@ ul.wmuSliderPagination {
     display: block;
     width: 100%;
     border: 1px solid #d9d9d9;
-    margin: 10px 0 20px;
+    margin: 20px 0 20px;
     padding: 10px 15px;
     box-sizing: border-box;
     font-wieght: 400;
@@ -2830,6 +2869,13 @@ ul.wmuSliderPagination {
     margin-left: 18px;
     margin-bottom: -15px;
 }
+.form-module input[id="sendRegistBtn"] {
+    background: #84C639;
+    border: 1px solid #d9d9d9;
+    width: 41%;
+    margin-left: 18px;
+    margin-bottom: -15px;
+}
 
 .form-module input[type="submitButton"]:hover {
     background: #FA1818;
@@ -2840,6 +2886,9 @@ ul.wmuSliderPagination {
 }
 
 .form-module input[id="sendBtn"]:hover {
+     background: #FA1818;
+ }
+.form-module input[id="sendRegistBtn"]:hover {
     background: #FA1818;
 }
 

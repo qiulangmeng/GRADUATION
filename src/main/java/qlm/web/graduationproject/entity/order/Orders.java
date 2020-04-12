@@ -24,6 +24,7 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@EqualsAndHashCode
 public class Orders implements Serializable {
     /**
      * 物理结构 用户关系

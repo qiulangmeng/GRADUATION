@@ -47,7 +47,8 @@ public class SmsServiceImpl implements SmsService {
         request.putQueryParameter("SignName", signName);
         request.putQueryParameter("TemplateCode", templateCode);
         JSONObject object=new JSONObject();
-        String randCode=getRandCode(6);
+        String randCode;
+        randCode = getRandCode(6);
         log.info("验证码为：{}",randCode);
         object.put("code",randCode);
         request.putQueryParameter("TemplateParam", object.toJSONString());
@@ -105,6 +106,7 @@ public class SmsServiceImpl implements SmsService {
     }
     @Test
     public void Test(){
-        sendSms("15295527902");
+        SmsServiceImpl smsService = new SmsServiceImpl();
+        smsService.sendSms("15928838908");
     }
 }

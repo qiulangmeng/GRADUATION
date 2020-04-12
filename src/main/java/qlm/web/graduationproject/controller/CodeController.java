@@ -9,8 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import qlm.web.graduationproject.service.sms.SmsService;
 import qlm.web.graduationproject.service.sms.SmsServiceImpl;
+import qlm.web.graduationproject.utils.RedisUtil;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
@@ -32,9 +34,12 @@ public class CodeController {
     private static final Logger LOG = LoggerFactory.getLogger(CodeController.class);
 
     @Autowired
-    private Producer kaptchaProducer;
+    private RedisUtil redisUtil;
+
     @Autowired
-    private SmsService smsService;
+    private Producer kaptchaProducer;
+//    @Autowired
+//    private SmsService smsService;
     /**
      * 获取图片验证码
      * @param response 请求
@@ -60,20 +65,22 @@ public class CodeController {
     }
 
     /**
-     * 向指定手机发送验证短信
+     * 向指定手机发送验证短信，验证码发送并使用请求方指定缓存键缓存到redis中
      * 并向session内写入验证手机号，验证码，验证短信是否发送成功
      * @param mobile 手机号
-     * @param session session
+     * @param redisname 缓存名
      */
     @GetMapping("/sms")
-    public boolean sendSms(@RequestParam String mobile, HttpSession session){
-        String code = SmsServiceImpl.getRandCode(6);
-        boolean isOk = smsService.sendSms(mobile, code);
+    @ResponseBody
+    public boolean sendSms(@RequestParam String mobile,@RequestParam String redisname){
+//        String code = SmsServiceImpl.getRandCode(6);
+//        boolean isOk = smsService.sendSms(mobile, code);
         Map<String,Object> map = new HashMap<>();
         map.put("mobile",mobile);
-        map.put("code",code);
-        map.put("isOk",isOk);
-        session.setAttribute("smsCode",map);
-        return isOk;
+        map.put("code","123456");
+//        map.put("code",code);
+        map.put("isOk",true);
+        redisUtil.hmset(redisname+mobile,map,600);
+        return true;
     }
 }

@@ -1,4 +1,5 @@
 package qlm.web.graduationproject.service.manager;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
 import qlm.web.graduationproject.entity.manager.User;
 
@@ -35,4 +36,11 @@ public interface UserService {
      * @param id 用户id
      */
     void deleteById(Long id);
+
+    /**
+     * 通过电话加载
+     * @param mobile 手机号
+     * @return 用户明细
+     */
+    UserDetails loadUserByMobile(String mobile);
 }
