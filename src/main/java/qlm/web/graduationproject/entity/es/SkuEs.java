@@ -38,7 +38,15 @@ public class SkuEs {
 
     public SkuEs(Sku sku) {
         this.id = sku.getId();
-        this.context = sku.getSpuCategory().getName()+"-"+sku.getSpu().getName()+"-"+sku.getName()+"-"+sku.getCaption();
+        //一级分类+二级分类+三级分类+品牌名+描述+食用方法+商品名+副标题
+        this.context = sku.getSpu().getFirstCategory().getName()+"-"+
+                sku.getSpu().getSecondCategory().getName()+"-"+
+                sku.getSpu().getThirdCategory().getName()+"-"+
+                sku.getSpu().getName()+"-"+
+                sku.getSpu().getDesDetail()+"-"+
+                sku.getSpu().getDesUse()+"-"+
+                sku.getName()+"-"+
+                sku.getCaption();
         this.price = sku.getPrice();
 }
 
@@ -49,5 +57,32 @@ public class SkuEs {
         this.id = id;
         this.context = context;
         this.price = price;
+    }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        //result=prime * result+((id==null)?0:id.hashCode());  
+        //使哈希值与total属性值关联  
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
+    }
+
+    @Override
+//重写equals方法  
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        SkuEs other = (SkuEs) obj;
+        if (id == null) {
+            return other.id == null;
+        } else {return id.equals(other.id);}
     }
 }

@@ -13,8 +13,12 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import qlm.web.graduationproject.entity.good.Sku;
+import qlm.web.graduationproject.entity.manager.Role;
 import qlm.web.graduationproject.entity.manager.User;
 import qlm.web.graduationproject.io.Message;
+import qlm.web.graduationproject.repository.good.SkuReposity;
+import qlm.web.graduationproject.repository.manager.RoleRepository;
 import qlm.web.graduationproject.service.manager.UserService;
 import qlm.web.graduationproject.utils.RedisUtil;
 import qlm.web.graduationproject.utils.RequestToUserUtil;
@@ -33,6 +37,8 @@ import java.util.Set;
 @Controller
 public class LoginController {
     private static final Logger LOG = LoggerFactory.getLogger(LoginController.class);
+    @Autowired
+    private SkuReposity skuReposity;
 
     @Autowired
     private UserService userService;
@@ -272,5 +278,11 @@ public Message resetByMobile(HttpServletRequest request){
     }
 
 //-------------------------------------------//检查---------------------------------------------------
+
+    @GetMapping("/myuser")
+    @ResponseBody
+    public Sku getUser(){
+        return skuReposity.findById(1L).get();
+    }
 
 }

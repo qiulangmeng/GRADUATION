@@ -12,6 +12,8 @@ import qlm.web.graduationproject.entity.manager.User;
 
 import java.io.Serializable;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -36,6 +38,42 @@ class RedisUtilTest {
         person.setName("zhangsan");
         redisUtil.set("persion-001",person);
         System.out.println(redisUtil.get("persion-001"));
+
+    }
+    @Test
+    public void test1(){
+        redisUtil.remove("persions");
+        Person person = new Person();
+        person.setAge(22);
+        person.setId("001");
+        person.setName("zhangsan");
+        Person person1 = new Person();
+        person1.setAge(23);
+        person1.setId("002");
+        person1.setName("lisi");
+        Person person2 = new Person();
+        person2.setAge(33);
+        person2.setId("003");
+        person2.setName("wangwu");
+        Person person3 = new Person();
+        person3.setAge(63);
+        person3.setId("004");
+        person3.setName("qiulangmeng");
+        ArrayList<Object> persions = new ArrayList<>();
+        persions.add(person);
+        persions.add(person1);
+        persions.add(person2);
+        redisUtil.lSet("persions",persions);
+        List<Object> objects = redisUtil.lGet("persions", 0, redisUtil.lGetListSize("persions"));
+        for (Object o:objects) {
+            System.out.println("object"+o);
+        }
+        redisUtil.lUpdateIndex("persions",0,person3);
+        List<Object> objects1 = redisUtil.lGet("persions", 0, redisUtil.lGetListSize("persions"));
+        for (Object o:objects1) {
+            System.out.println("object1"+o);
+        }
+
 
     }
     static class Person implements Serializable {

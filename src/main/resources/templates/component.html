@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <!--    使用方法 :<div th:replace="component::head(~{::title})"></div>  -->
 <!--    ~{::titile}代之当前页面的标题，同理如要扩展，可以加入~{::link}或者~{::script},只需重写component里面的head组件-->
 <head th:fragment="head(title)">
@@ -102,9 +104,10 @@
                         <!--/*@thymesVar id="principal" type="用户证书"*/-->
                         <!--/*@thymesVar id="username" type="用户名"*/-->
                         <ul class="dropdown-menu drp-mnu">
-                            <li><a href="#" th:inline="text">用户名:[[${user?.username}]]</a></li>
+                            <li><a href="#" th:inline="text">用户:[[${user?.username}]]</a></li>
                             <li><a th:href="'/user/get/'+${user?.id}+'/center'">账户管理</a></li>
                             <li><a th:href="'/user/get/'+${user?.id}+'/cart'">进入购物车</a></li>
+                            <li><a href="/login">切换用户</a></li>
                             <li><a href="/logout">退出</a></li>
                         </ul>
                     </div>

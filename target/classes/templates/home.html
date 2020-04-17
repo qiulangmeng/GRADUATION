@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head th:replace="component::head(~{::title})">
     <title>Home</title>
 </head>
@@ -245,6 +247,20 @@
 <!-- 通讯 -->
 <div th:replace="component::newsletter"></div>
 <!-- //通讯  -->
+<!--<div sec:authorize="isAuthenticated()">-->
+<!--    <p>已登录</p>-->
+<!--    <p>登录名：<span sec:authentication="name"></span></p>-->
+<!--    <p>角色：<span sec:authentication="principal.authorities"></span></p>-->
+<!--    <p>Username：<span sec:authentication="principal.username"></span></p>-->
+<!--    <p>Password：<span sec:authentication="principal.password"></span></p>-->
+<!--    <p>Email ：<span sec:authentication="principal.email"></span></p>-->
+<!--    <p>Sex：<span sec:authentication="principal.sex"></span></p>-->
+<!--    <p>mobile：<span sec:authentication="principal.mobile"></span></p>-->
+<!--    <p>拥有的角色：-->
+<!--        <span sec:authorize="hasRole('ROLE_ADMIN')">管理员</span>-->
+<!--        <span sec:authorize="hasRole('ROLE_USER')">用户</span>-->
+<!--    </p>-->
+<!--</div>-->
 
 <!-- 页脚 -->
 <div th:replace="component::footer"></div>

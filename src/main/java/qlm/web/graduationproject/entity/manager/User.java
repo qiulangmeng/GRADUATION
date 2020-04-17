@@ -1,4 +1,8 @@
 package qlm.web.graduationproject.entity.manager;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -33,10 +37,12 @@ import java.util.*;
 @Entity
 @Table(name = "user")
 @EntityListeners(AuditingEntityListener.class)
+@JsonIgnoreProperties(value = { "hibernateLazyInitializer"})
 public class User implements UserDetails, Serializable {
     /**
      * 物理结构
      */
+    @JsonIgnoreProperties("users")
     @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL,})
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
@@ -44,32 +50,36 @@ public class User implements UserDetails, Serializable {
     /**
      * 地址关系
      */
+    @JsonIgnoreProperties("user")
     @OneToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private Set<Address> addresses;
     /**
      * 购物车关系
      */
-    @OneToMany(fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
+    @JsonIgnoreProperties("user")
+    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "user_id")
     private Set<Car> cars;
     /**
      * 订单关系
      */
-    @OneToMany(fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
+    @JsonIgnoreProperties("user")
+    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "user_id")
     private Set<Orders> orders;
     /**
      * 搜索记录关系
      */
-    @OneToMany(fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
+    @JsonIgnoreProperties("user")
+    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "user_id")
     private Set<UserSearch> userSearches;
     /**
      * 用户登录关系
      */
     @Setter
-    @OneToOne(fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
+    @OneToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     private UserAttempts userAttempts;
 
     /**
@@ -85,18 +95,19 @@ public class User implements UserDetails, Serializable {
     private Long id;
 
     @NotBlank(message = "用户名不能为空")
-    @Column(nullable = false,unique = true)
+    @Column(nullable = false, unique = true)
     private String userName;
 
     private String sex;
 
     @NotBlank(message = "电话不能为空")
-    @Column(nullable = false,unique = true)
+    @Column(nullable = false, unique = true)
     private String mobile;
 
     @NotBlank(message = "密码不能为空")
     @Column(nullable = false)
     @ColumnTransformer()
+    @JsonIgnore
     private String password;
 
     private String email;
@@ -105,7 +116,7 @@ public class User implements UserDetails, Serializable {
     private String userImageUrl;
 
     @NotNull(message = "是否锁定不能为空")
-    @Column(nullable = false,columnDefinition = "tinyint default 1 comment '是否上架'")
+    @Column(nullable = false, columnDefinition = "tinyint default 1 comment '是否上架'")
     @Setter
     private Boolean accountNonLocked;
 
@@ -139,8 +150,38 @@ public class User implements UserDetails, Serializable {
     public User() {
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        //result=prime * result+((id==null)?0:id.hashCode());  
+        //使哈希值与total属性值关联  
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
+    }
+
+    @Override
+//重写equals方法  
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        User other = (User) obj;
+        if (id == null) {
+            return other.id == null;
+        } else {return id.equals(other.id);}
+    }
+
+
     /**
      * 重写方法
+     *
      * @return 权限集合
      */
 
@@ -171,6 +212,7 @@ public class User implements UserDetails, Serializable {
 
     /**
      * 账号是否过期
+     *
      * @return 是否过期
      */
     @Override
@@ -180,6 +222,7 @@ public class User implements UserDetails, Serializable {
 
     /**
      * 账号是否锁定
+     *
      * @return 是否锁定
      */
     @Override
@@ -189,6 +232,7 @@ public class User implements UserDetails, Serializable {
 
     /**
      * 凭证是否过期
+     *
      * @return 是否过期
      */
     @Override
@@ -213,24 +257,26 @@ public class User implements UserDetails, Serializable {
         private UserAttempts userAttempts;
         private Long id;
         private @NotBlank(message = "用户名不能为空") @UniqueElements String userName;
-        private String sex="";
+        private String sex = "";
         private @NotBlank(message = "电话不能为空") @UniqueElements String mobile;
         private @NotBlank(message = "密码不能为空") String password;
-        private String email="";
-        private String userImageUrl="/static/images/userDefault.png";
-        private @NotNull(message = "是否锁定不能为空") Boolean accountNonLocked=true;
-        private Date createTime=new Date();
-        private Date updateTime=new Date();
+        private String email = "";
+        private String userImageUrl = "/static/images/userDefault.png";
+        private @NotNull(message = "是否锁定不能为空") Boolean accountNonLocked = true;
+        private Date createTime = new Date();
+        private Date updateTime = new Date();
 
         public Builder() {
         }
+
         public Builder(@NotBlank(message = "用户名不能为空") @UniqueElements String userName,
                        @NotBlank(message = "电话不能为空") @UniqueElements String mobile,
-                       @NotBlank(message = "密码不能为空") String password){
-            this.userName=userName;
-            this.mobile=mobile;
-            this.password=password;
+                       @NotBlank(message = "密码不能为空") String password) {
+            this.userName = userName;
+            this.mobile = mobile;
+            this.password = password;
         }
+
         public Builder(User user) {
             id = user.id;
             userName = user.userName;
@@ -239,7 +285,7 @@ public class User implements UserDetails, Serializable {
             password = user.password;
             email = user.email;
             userImageUrl = user.userImageUrl;
-            accountNonLocked=user.accountNonLocked;
+            accountNonLocked = user.accountNonLocked;
             createTime = user.createTime;
             updateTime = new Date();
         }
@@ -436,7 +482,6 @@ public class User implements UserDetails, Serializable {
 
 
 //构建器
-
 
 
 }

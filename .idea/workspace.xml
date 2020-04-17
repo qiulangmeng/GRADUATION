@@ -1,36 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73a885c5-feba-4bd4-8ab4-29719cee8106" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/reset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/reset.html" afterDir="false" />
+    <list default="true" id="73a885c5-feba-4bd4-8ab4-29719cee8106" name="Default Changelist" comment="忘记密码功能实现">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity5_3_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graduationproject.log.2020-04-12.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graduationproject.log.2020-04-13.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graduationproject.log.2020-04-14.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graduationproject.log.2020-04-15.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graduationproject.log.2020-04-16.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/demo-page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/examples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/geochart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/hover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admincss/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminfonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/climate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/ftr-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/mess.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/p8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/pro9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/reg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/shoppy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/tick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminimages/visit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/bars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/chartinator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/gmaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/jquery-2.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/jquery.nicescroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/modernizr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/nivo-lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/adminjs/skycons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/免洗黑木耳125g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/免洗黑木耳70g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/古蔺椒麻鸡.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/古蔺椒麻鸡.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/土豆多多.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/山薇菜.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/新鲜松茸.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/有机私享家.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/松茸菌煲汤.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/活性松茸12.5g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/活性松茸A级30g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/绿岛山珍.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/羊肚菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/美味牛肝菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/老王番茄.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/青冈菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/黑虎掌菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/SendMailUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/demo-page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/examples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/geochart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/hover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/admincss/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminfonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/climate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/ftr-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/mess.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/p8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/pro9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/reg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/shoppy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/tick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminimages/visit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/bars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/chartinator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/gmaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/jquery-2.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/jquery.nicescroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/modernizr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/nivo-lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/adminjs/skycons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/免洗黑木耳125g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/免洗黑木耳70g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/古蔺椒麻鸡.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/古蔺椒麻鸡.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/土豆多多.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/山薇菜.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/新鲜松茸.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/有机私享家.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/松茸菌煲汤.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/活性松茸12.5g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/活性松茸A级30g.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/绿岛山珍.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/羊肚菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/美味牛肝菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/老王番茄.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/青冈菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/黑虎掌菌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/reset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/qlm/web/graduationproject/utils/SendMailUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graduationproject.log" beforeDir="false" afterPath="$PROJECT_DIR$/graduationproject.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationproject.log.2020-04-05.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationproject.log.2020-04-06.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationproject.log.2020-04-07.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationproject.log.2020-04-08.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduationproject.log.2020-04-09.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/PublicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/es/SkuEs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/es/SkuEs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Options.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Sku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Sku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuSpecifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuSpecifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Spu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Spu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuBrand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/skuPromotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuPromotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/io/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/io/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RequestToUserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RequestToUserUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/regist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/regist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserAttempts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserAttempts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/reset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/project.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/io/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/io/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/utils/RequestToUserUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/utils/RequestToUserUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/regist.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/regist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/RedisUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/RedisUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/controller/PublicController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/address/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/car/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/es/SkuEs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/Options.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/Sku.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SkuImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SkuSpecifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/Spu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SpuBrand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SpuCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/SpuSpecification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/good/skuPromotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/Authority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/UserAttempts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/manager/UserSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/order/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/entity/order/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/qlm/web/graduationproject/service/email/MailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/component.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/qlm/web/graduationproject/utils/RedisUtilTest$Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/qlm/web/graduationproject/utils/RedisUtilTest$Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/qlm/web/graduationproject/utils/RedisUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/qlm/web/graduationproject/utils/RedisUtilTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,33 +270,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="70" />
+            <state relative-caret-position="228">
+              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="85" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#input#5;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#5;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#6;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#6;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#7;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#7;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="method#isValidRegistRequest#0;class#LoginController#0" />
+                <element signature="method#isValidRegistSmsCode#0;class#LoginController#0" />
+                <element signature="method#checkMobile#0;class#LoginController#0" />
+                <element signature="method#checkUsername#0;class#LoginController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/regist.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+            <state relative-caret-position="190">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-630">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/PublicController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1710">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuPromotion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/es/SkuEs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/repository/es/SkuEsRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -90,22 +365,13 @@
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AntPathRequestMatcher</find>
-      <find>fa</find>
-      <find>tooltip</find>
-      <find>allmap</find>
-      <find>r-result</find>
-      <find>container</find>
-      <find>cityName</find>
-      <find>@</find>
-      <find>my</find>
       <find>collapse</find>
       <find>bs.collapse</find>
       <find>hide</find>
@@ -127,6 +393,15 @@
       <find>Mobile</find>
       <find>toggle</find>
       <find>check</find>
+      <find>hash</find>
+      <find>them</find>
+      <find>../images</find>
+      <find>href</find>
+      <find>User</find>
+      <find>spu</find>
+      <find>Au</find>
+      <find>car</find>
+      <find>catego</find>
     </findStrings>
     <replaceStrings>
       <replace>baidu</replace>
@@ -138,6 +413,21 @@
       <replace>b</replace>
       <replace>request</replace>
       <replace>getParameter</replace>
+      <replace>../adminimages</replace>
+      <replace>Car</replace>
+      <replace>SkuEs</replace>
+      <replace>Options</replace>
+      <replace>Sku</replace>
+      <replace>SkuImage</replace>
+      <replace>SkuPromotion</replace>
+      <replace>SkuSpecifications</replace>
+      <replace>Spu</replace>
+      <replace>SpuBrand</replace>
+      <replace>SpuCategory</replace>
+      <replace>SpuSpecification</replace>
+      <replace>Authority</replace>
+      <replace>Role</replace>
+      <replace>UserAttempt</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -146,57 +436,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.11.1.min.js" />
-        <option value="$PROJECT_DIR$/target/classes/templates/text.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/test.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/baidu.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/dist.bootstrap.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/text.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/baidu.css" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/myAuthenticationSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/myAuthenticationFailureHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/repository/manager/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/SmsCodeAuthenticationSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/service/email/MailServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/RedisAutoConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/RedisUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/InitializingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RedisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/ValidateCodeFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserAttemptsImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/component.html" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/io/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RequestToUserUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/reset.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/reset.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/regist.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/reset.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/jquery.mycart.js" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/RedisUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/component.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admincompoment.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/utils/SendMailUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admincomponent.html" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/home.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admincss/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/skuPromotion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuCategory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuBrand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Options.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Sku.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuSpecifications.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Spu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Authority.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserAttempts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/OrderItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/es/SkuEs.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/search.html" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/PublicController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuPromotion.java" />
       </list>
     </option>
   </component>
@@ -248,6 +538,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,15 +579,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,6 +608,26 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -335,7 +637,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -354,7 +676,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -364,7 +686,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -374,8 +696,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="sms" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -391,15 +712,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -411,13 +723,42 @@
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="graduationproject" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,7 +780,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -451,19 +792,21 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\graduation\project\src\main\resources\static\images" />
-      <recent name="D:\graduation\project\src\main\resources\static\js" />
-      <recent name="D:\graduation\project\src\main\resources\static\css" />
+      <recent name="D:\graduation\project\src\main\resources\static\adminjs" />
+      <recent name="D:\graduation\project\src\main\resources\static\adminfonts" />
+      <recent name="D:\graduation\project\src\main\resources\static\adminimages" />
+      <recent name="D:\graduation\project\src\main\resources\static\admincss" />
     </key>
   </component>
   <component name="RestServicesNavigator">
     <treeState>
       <expand>
         <path>
-          <item name="Found 9 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 13 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 9 services " type="fcff1e1b:RestServiceStructure$RootNode" />
-          <item name="graduation_project" type="c588b436:RestServiceStructure$ProjectNode" />
+          <item name="Found 13 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="project" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -530,8 +873,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SendMessageUtil.testSendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graduation_project" />
+    <configuration name="RedisUtilTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="qlm.web.graduationproject.utils.*" />
@@ -539,8 +882,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="qlm.web.graduationproject.utils" />
-      <option name="MAIN_CLASS_NAME" value="qlm.web.graduationproject.utils.SendMessageUtil" />
-      <option name="METHOD_NAME" value="testSendMessage" />
+      <option name="MAIN_CLASS_NAME" value="qlm.web.graduationproject.utils.RedisUtilTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -571,20 +914,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SendMessageUtil.testSendMessage" />
       <item itemvalue="JUnit.SmsServiceImpl.Test" />
       <item itemvalue="JUnit.MailServiceImplTest.sendMail" />
       <item itemvalue="JUnit.MailServiceImplTest.sayHello" />
       <item itemvalue="JUnit.RedisUtilTest.test" />
+      <item itemvalue="JUnit.RedisUtilTest.test1" />
       <item itemvalue="Spring Boot.GraduationProjectApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RedisUtilTest.test" />
         <item itemvalue="JUnit.MailServiceImplTest.sendMail" />
+        <item itemvalue="JUnit.RedisUtilTest.test1" />
+        <item itemvalue="JUnit.RedisUtilTest.test" />
         <item itemvalue="JUnit.MailServiceImplTest.sayHello" />
         <item itemvalue="JUnit.SmsServiceImpl.Test" />
-        <item itemvalue="JUnit.SendMessageUtil.testSendMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -604,7 +947,9 @@
       <workItem from="1586311390755" duration="58448000" />
       <workItem from="1586522862015" duration="34249000" />
       <workItem from="1586676175757" duration="2866000" />
-      <workItem from="1586680004794" duration="18842000" />
+      <workItem from="1586680004794" duration="60229000" />
+      <workItem from="1586956487835" duration="4874000" />
+      <workItem from="1587020109704" duration="27384000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1586232374056</created>
@@ -613,28 +958,17 @@
       <option name="project" value="LOCAL" />
       <updated>1586232374056</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="忘记密码功能实现">
+      <created>1586705266748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586705266748</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MailServiceImplTest_sendMail - 2020.04.09 at 11h 30m 19s.xml">
-      <configuration name="MailServiceImplTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MailServiceImplTest_sendMail - 2020.04.09 at 11h 53m 46s.xml">
-      <configuration name="MailServiceImplTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 05m 58s.xml">
-      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 10m 31s.xml">
-      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 13m 25s.xml">
-      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 14m 51s.xml">
-      <configuration name="RedisUtilTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RedisUtilTest_test - 2020.04.10 at 00h 20m 05s.xml">
       <configuration name="RedisUtilTest.test" configurationId="JUnit" />
     </history-entry>
@@ -647,24 +981,43 @@
     <history-entry file="RedisUtilTest_test - 2020.04.10 at 15h 23m 51s.xml">
       <configuration name="RedisUtilTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RedisUtilTest_test1 - 2020.04.15 at 00h 13m 49s.xml">
+      <configuration name="RedisUtilTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test1 - 2020.04.15 at 00h 15m 43s.xml">
+      <configuration name="RedisUtilTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test1 - 2020.04.15 at 00h 17m 49s.xml">
+      <configuration name="RedisUtilTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisUtilTest_test1 - 2020.04.15 at 00h 19m 27s.xml">
+      <configuration name="RedisUtilTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MailServiceImplTest_sendMail - 2020.04.15 at 12h 48m 38s.xml">
+      <configuration name="MailServiceImplTest.sendMail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MailServiceImplTest_sendMail - 2020.04.15 at 12h 50m 32s.xml">
+      <configuration name="MailServiceImplTest.sendMail" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196451000" />
+    <option name="totallyTimeSpent" value="270096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Structure" order="3" sideWeight="0.5042493" side_tool="true" weight="0.32497978" />
+      <window_info id="Structure" order="3" sideWeight="0.6054795" side_tool="true" weight="0.32497978" />
       <window_info id="Favorites" order="4" sideWeight="0.50177306" side_tool="true" weight="0.3694422" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.4957507" visible="true" weight="0.32497978" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.3966942" visible="true" weight="0.33063865" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26820603" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.89698046" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.54174066" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -679,9 +1032,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Version Control" order="16" weight="0.60923624" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.37411347" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.37300178" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="1" weight="0.32983023" />
+      <window_info anchor="right" id="Maven" order="1" weight="0.64995956" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="RestServices" order="4" weight="0.32983023" />
@@ -784,19 +1137,8 @@
       <path value="$PROJECT_DIR$/graduation" />
     </ignored-roots>
     <MESSAGE value="首次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="首次提交" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/SmsCodeAuthenticationProvider.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="忘记密码功能实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="忘记密码功能实现" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -814,382 +1156,126 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.3.RELEASE/thymeleaf-extras-springsecurity5-3.0.3.RELEASE.jar!/org/thymeleaf/extras/springsecurity5/auth/Authorization.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1099">
-          <caret line="66" column="84" selection-start-line="66" selection-start-column="84" selection-end-line="66" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserAttemptsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/LoginAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/sms/SmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-2.1.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="6791" selection-start-line="6791" selection-end-line="6791" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="503" selection-start-line="503" selection-end-line="503" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/session/SessionManagementFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/authentication/AnonymousAuthenticationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/RememberMeAuthenticationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/servletapi/SecurityContextHolderAwareRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/savedrequest/RequestCacheAwareFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/provider/sms/ValidateCodeFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="198">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="1273">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admincomponent.html" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/qlm/web/graduationproject/service/email/MailServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="152">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/csrf/CsrfFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admincss/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="323">
+          <caret line="2858" column="26" selection-start-line="2858" selection-start-column="26" selection-end-line="2858" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/header/HeaderWriterFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/SendMailUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="2185">
+          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/email/MailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="456">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/context/request/async/WebAsyncManagerIntegrationFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="14858">
+          <caret line="782" column="35" selection-start-line="782" selection-start-column="31" selection-end-line="782" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#2;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#3;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#4;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#section#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#li#6;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#li#7;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#li#8;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admincss/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.31/tomcat-embed-core-9.0.31.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/adminjs/bars.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/filter/DelegatingFilterProxy.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE.jar!/org/springframework/security/web/FilterChainProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="292">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+        <state relative-caret-position="35">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/manager/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/io/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/HotWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        <state relative-caret-position="111">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/RequestToUserUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.4.RELEASE/spring-aop-5.2.4.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="456" selection-start-line="456" selection-end-line="456" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="430" selection-start-line="430" selection-end-line="430" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="477" selection-start-line="477" selection-end-line="477" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/reset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="165" selection-start-line="165" selection-end-line="169" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="243" column="34" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
-          <folding>
-            <element signature="method#dispath#0;class#LoginController#0" />
-            <element signature="method#isValidRegistRequest#0;class#LoginController#0" />
-            <element signature="method#isValidRegistSmsCode#0;class#LoginController#0" />
-            <element signature="method#isValidRegistRequest#1;class#LoginController#0" />
-            <element signature="method#isValidRegistSmsCode#1;class#LoginController#0" />
-            <element signature="method#checkMobile#0;class#LoginController#0" />
-            <element signature="method#checkUsername#0;class#LoginController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5453">
-          <caret line="2901" column="36" selection-start-line="2901" selection-start-column="36" selection-end-line="2901" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/reset.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="63" column="87" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="87" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/regist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="-5570">
+          <caret line="102" column="60" selection-start-line="102" selection-start-column="60" selection-end-line="102" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="70" />
+        <state relative-caret-position="532">
+          <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -1203,6 +1289,271 @@
             <element signature="n#style#0;n#input#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#8;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/古蔺椒麻鸡.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/address/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Options.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Sku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuSpecifications.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/Spu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuBrand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SpuSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Authority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserAttempts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/manager/UserSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/order/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/es/SkuEsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/CodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/car/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="73" selection-start-line="73" selection-end-line="99" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/repository/es/SkuEsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.5.RELEASE/spring-data-commons-2.2.5.RELEASE.jar!/org/springframework/data/domain/Page.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.2.5.RELEASE/spring-data-jpa-2.2.5.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/service/es/impl/SkuEsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/es/SkuEs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="85" />
+          <folding>
+            <element signature="method#isValidRegistRequest#0;class#LoginController#0" />
+            <element signature="method#isValidRegistSmsCode#0;class#LoginController#0" />
+            <element signature="method#checkMobile#0;class#LoginController#0" />
+            <element signature="method#checkUsername#0;class#LoginController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/GraduationProjectApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/utils/SkuChangeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/controller/PublicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/qlm/web/graduationproject/entity/good/SkuPromotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>

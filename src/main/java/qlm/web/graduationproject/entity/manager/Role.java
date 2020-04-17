@@ -1,5 +1,8 @@
 package qlm.web.graduationproject.entity.manager;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -21,16 +24,18 @@ import java.util.Set;
 @Setter
 @Entity
 @Table(name = "role")
-@EqualsAndHashCode
+@JsonIgnoreProperties(value = { "hibernateLazyInitializer"})
 public class Role implements GrantedAuthority , Serializable {
     /**
      * 物理结构
      */
+    @JsonIgnoreProperties("roles")
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL,})
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"))
     private Set<User> users;
 
+    @JsonIgnoreProperties("roles")
     @ManyToMany(fetch = FetchType.EAGER,cascade = {CascadeType.ALL})
     @JoinTable(name = "role_authority",joinColumns  = @JoinColumn(name = "role_id",referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "authority_id",referencedColumnName = "id"))
@@ -64,6 +69,34 @@ public class Role implements GrantedAuthority , Serializable {
     @Override
     public String getAuthority() {
         return name;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        //result=prime * result+((id==null)?0:id.hashCode());  
+        //使哈希值与total属性值关联  
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
+    }
+
+    @Override
+//重写equals方法  
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Role other = (Role) obj;
+        if (id == null) {
+            return other.id == null;
+        } else {return id.equals(other.id);}
     }
 
 }
